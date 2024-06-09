@@ -5,8 +5,19 @@ import youtube from '../assets/icons/youtube.png';
 import instagram from '../assets/icons/instagram.png';
 import facebook from '../assets/icons/facebook.png';
 import copyright from '../assets/icons/Copyright.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const navigateToPrivacy = () => {
+    navigate('/privacy');
+  }
+
+  const navigateToTerms = () => {
+    navigate('/terms');
+  }
+
   return (
     <section id='contact-us' className='pt-[50px] pb-[43px] z-20'>
       <div className='flex flex-col gap-[108px]'>
@@ -39,9 +50,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='flex flex-row justify-left md:justify-center ml-8 md:ml-0 w-full gap-2'>
-          <img src={copyright} alt="copyright" />
-          <p className='text-[#FEFBFBB2] font-medium text-[20px] leading-7'>2024 S.M.T.M. Capital Pvt. Ltd.</p>
+        <div className="flex flex-col justify-center items-center gap-4">
+          <div className='flex flex-row justify-left md:justify-center ml-8 md:ml-0 w-full gap-2'>
+            <img src={copyright} alt="copyright" />
+            <p className='text-[#FEFBFBB2] font-medium text-[20px] leading-7'>2024 S.M.T.M. Capital Pvt. Ltd.</p>
+          </div>
+
+          <div className="flex flex-row gap-4">
+            <p onClick={navigateToPrivacy} className="text-[#FEFBFBB2] transition ease-in-out duration-700 hover:text-[#FEFB20] cursor-pointer">Privacy Policy</p>
+            <p onClick={navigateToTerms} className="text-[#FEFBFBB2] transition ease-in-out duration-700 hover:text-[#FEFB20] cursor-pointer">Terms and Conditions</p>
+          </div>
         </div>
       </div>
     </section>
