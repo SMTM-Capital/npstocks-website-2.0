@@ -3,6 +3,7 @@ import closeIcon from '../assets/icons/close.png';
 import gradient from '../assets/icons/gradient.svg';
 import appstore from '../assets/icons/appstore.png';
 import playstore from '../assets/icons/playstore.png';
+import QR from '../assets/images/qr.png';
 
 const QrModel = ({ close }) => {
   return (
@@ -12,18 +13,20 @@ const QrModel = ({ close }) => {
         <img src={gradient} alt="gradient" />
       </div>
 
-      <div className="absolute w-[210px] h-[200px] md:w-[280px] md:h-[274px] top-20 bg-white rounded-3xl shadow-xl object-contain"></div>
+      <div className="absolute w-[210px] h-[200px] md:w-[280px] md:h-[274px] top-20 bg-white rounded-3xl shadow-xl object-contain">
+        <img src={QR} alt="qr" />
+      </div>
 
       <div className='flex flex-col text-[24px] font-medium leading-8 pt-48 pb-20 justify-center items-center w-[322px] md:w-[480px] text-[#0A0A0ACC] border-b border-b-black border-dashed'>
         <p>Scan the QR Code to</p>
         <p>download npstocks app</p>
       </div>
 
-      <div className="flex flex-row w-[322px] md:w-[480px] pt-8 md:p-8 justify-between">
-        <a href="https://play.google.com/store/apps/details?id=np.com.smtmcapital.npstocks&hl=en&gl=US" target='_blank'>
+      <div className="flex flex-row w-[322px] md:w-[480px] pt-8 md:p-8 justify-center">
+        <a href="https://play.google.com/store/apps/details?id=np.com.smtmcapital.npstocks" target='_blank'>
           <img src={playstore} alt="appstore" />
         </a>
-        <img src={appstore} alt="appstore" />
+        {/* <img src={appstore} alt="appstore" /> */}
       </div>
     </div>
   )

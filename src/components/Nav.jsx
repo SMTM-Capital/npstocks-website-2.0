@@ -24,8 +24,8 @@ const Nav = () => {
       </div>
 
       <div className='flex gap-4'>
-        <button className='px-5 py-[10px] transition ease-in-out duration-700 hover:text-[#FEFB20] hover:border-[#FEFB20] text-white text-[16px] font-medium leading-4 rounded-3xl border border-white'>Login to web</button>
-        <button className='px-5 py-[10px] transition ease-in-out duration-700 bg-[#FEFB20] hover:shadow-lg hover:shadow-[#FEFB20]/20 text-black text-[16px] font-medium leading-4 rounded-3xl'>Get Started</button>
+        <a target='_blank' href='https://app.npstocks.com' className='px-5 py-[10px] transition ease-in-out duration-700 hover:text-[#FEFB20] hover:border-[#FEFB20] text-white text-[16px] font-medium leading-4 rounded-3xl border border-white'>Login to web</a>
+        <a target='_blank' href='https://app.npstocks.com/register/' className='px-5 py-[10px] transition ease-in-out duration-700 bg-[#FEFB20] hover:shadow-lg hover:shadow-[#FEFB20]/20 text-black text-[16px] font-medium leading-4 rounded-3xl'>Get Started</a>
       </div>
     </div>
   )

@@ -49,13 +49,17 @@ export const pricings = [
     price: '499',
     time: 'One Month',
   },
+  // {
+  //   price: '2,500',
+  //   time: 'One Year',
+  //   offer: true,
+  //   discountPrice: '2,081',
+  //   discountPct: '15%',
+  //   offerTitle: '2081 New Year Special'
+  // },
   {
-    price: '2,500',
-    time: 'One Year',
-    offer: true,
-    discountPrice: '2,081',
-    discountPct: '15%',
-    offerTitle: '2081 New Year Special'
+    price: '999',
+    time: 'Three Months'
   },
   {
     price: '2,499',

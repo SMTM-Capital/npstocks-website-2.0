@@ -27,11 +27,11 @@ const Pricing = () => {
           }
         </div>
 
-        <button className='flex flex-row gap-6 items-center rounded-[60px] px-[64px] py-[24px] transition ease-in-out duration-700 hover:shadow-lg hover:shadow-[#5843F8]/70 bg-[#5843F8] text-white text-[16px] md:text-[24px] font-semibold'>
+        <a target='_blank' href='https://app.npstocks.com/register/' className='flex flex-row gap-6 items-center rounded-[60px] px-[64px] py-[24px] transition ease-in-out duration-700 hover:shadow-lg hover:shadow-[#5843F8]/70 bg-[#5843F8] text-white text-[16px] md:text-[24px] font-semibold'>
           <p>Start your free trial </p>
 
           <img src={arrow} alt="arrow" />
-        </button>
+        </a>
       </div>
     </section>
   )

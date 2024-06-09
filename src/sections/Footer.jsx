@@ -41,7 +41,7 @@ const Footer = () => {
 
         <div className='flex flex-row justify-left md:justify-center ml-8 md:ml-0 w-full gap-2'>
           <img src={copyright} alt="copyright" />
-          <p className='text-[#FEFBFBB2] font-medium text-[20px] leading-7'>smtmcapital</p>
+          <p className='text-[#FEFBFBB2] font-medium text-[20px] leading-7'>2024 S.M.T.M. Capital Pvt. Ltd.</p>
         </div>
       </div>
     </section>

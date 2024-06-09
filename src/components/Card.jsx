@@ -26,13 +26,13 @@ const Card = ({
           <p className='text-[#393737] font-semibold font-sm leading-normal'>now available for download on</p>
 
           <div className='flex flex-row gap-5'>
-            <a href="https://play.google.com/store/apps/details?id=np.com.smtmcapital.npstocks&hl=en&gl=US" target='_blank' className='object-contain w-[42px] h-[42px]'>
+            <a href="https://play.google.com/store/apps/details?id=np.com.smtmcapital.npstocks" target='_blank' className='object-contain w-[42px] h-[42px]'>
               <img src={googlePlay} alt="google"  />
             </a>
 
-            <a href="" className='object-contain w-[42px] h-[42px]'>
+            {/* <a href="" className='object-contain w-[42px] h-[42px]'>
               <img src={apple} alt="apple" />
-            </a>
+            </a> */}
           </div>
         </div>}
     </div>

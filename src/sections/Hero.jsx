@@ -33,7 +33,7 @@ const Hero = () => {
             onMouseEnter={() => setIsHovered2(true)}
             onMouseLeave={() => setIsHovered2(false)}
           >
-            <a className='flex flex-row items-center gap-[10px] px-5 py-[10px] cursor-pointer'>
+            <a target='_blank' href='https://app.npstocks.com' className='flex flex-row items-center gap-[10px] px-5 py-[10px] cursor-pointer'>
               <img src={isHovered2 ? keyboardYellow : keyboard} alt="keyboard" />
               <p className='text-[16px] font-medium'>Launch npstocks <span className='font-bold ml-1'>Web</span></p>
             </a>
