@@ -9,7 +9,7 @@ const Pricing = () => {
       <div className='flex flex-col items-center gap-[81px]'>
         <div className='flex flex-col items-center gap-4'>
           <p className='title max-w-[400px] text-wrap'>Pick a plan that's right for you</p>
-          <p className='-rotate-[4.5deg] text-black bg-[#E1E1E1] text-center rounded-[60px] px-[24px] py-[16px] text-[14px] md:text-[24px] font-medium w-[296px] md:w-auto'>all plans start with a free 5 day trial</p>
+          <p className='-rotate-[4.5deg] text-black bg-[#E1E1E1] text-center rounded-[60px] px-[24px] py-[16px] text-[14px] md:text-[24px] font-medium w-[296px] md:w-auto'>all plans start with a free 7 day trial</p>
         </div>
 
         <div className='flex flex-col md:flex-row gap-[39px]'>
