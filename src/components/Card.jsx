@@ -30,9 +30,9 @@ const Card = ({
               <img src={googlePlay} alt="google"  />
             </a>
 
-            {/* <a href="" className='object-contain w-[42px] h-[42px]'>
+            <a href="https://apps.apple.com/app/npstocks-your-nepse-assistant/id6475991618" target="_blank" className='object-contain w-[42px] h-[42px]'>
               <img src={apple} alt="apple" />
-            </a> */}
+            </a>
           </div>
         </div>}
     </div>

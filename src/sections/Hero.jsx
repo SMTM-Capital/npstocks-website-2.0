@@ -19,12 +19,13 @@ const Hero = () => {
   return (
     <section className='relative max-container overflow-hidden h-[810px]'>
       <div className="flex flex-col items-center justify-center gap-9">
-        <div className='flex flex-col pt-32 items-center'>
+        <div className="flex flex-col pt-32 gap-4 items-center">
           <div className='flex flex-col items-center md:flex-row gap-3'>
             <p className='text-white text-[48px] sm:text-[64px] font-medium leading-[120%]'>Simple. </p>
             <p className='text-white text-[48px] sm:text-[64px] font-medium leading-[120%]'>Sophisticated.</p>
+            <p className='text-white text-[48px] sm:text-[64px] font-medium leading-[120%]'>Complete.</p>
           </div>
-          <p className='text-[#4D74FE] text-[48px] sm:text-[64px] font-medium leading-[120%]'>Complete.</p>
+          <p className="text-blue-500 text-2xl md:text-[32px] text-center font-normal leading-[38px]">360 coverage of Nepal Stock Exchange.</p>
         </div>
 
         <div className='flex flex-col items-center sm:flex-row gap-7'>
@@ -48,14 +49,14 @@ const Hero = () => {
               onClick={openQrModelFunc}
               className='flex flex-row items-center gap-[10px] px-5 py-[10px] cursor-pointer'
             >
-              <img src={isHovered ? mobileYellow : mobile} alt='mobile' />
+              <img src={isHovered ? mobileYellow : mobile} alt='mobile icon' />
               <p className='text-[16px] font-medium'>Download npstocks <span className='font-bold ml-1'>Mobile</span></p>
             </a>
           </div>
         </div>
 
         <div className='z-30'>
-          <img src={heroImage} alt="heroImage" />
+          <img src={heroImage} alt="npstocks dashboard in phone and laptop" />
         </div>
       </div>
       <div className='absolute right-10 -bottom-60 object-contain w-1/2 h-1/2 md:-right-60 md:-bottom-10 md:object-none'>

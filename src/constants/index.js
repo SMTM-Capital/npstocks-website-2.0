@@ -15,28 +15,28 @@ export const experienceText = {
   heading: 'Two unique experiences.',
   card1:
   {
-    title: 'npstocks mobile offer users access to the essential for investors on the go',
+    title: 'npstocks mobile offer users access to live NEPSE data for investors on the go',
     points: [
-      'get notified on any significant actions on your stocks',
+      'get notified on any significant actions on your NEPSE stocks',
       'track your investments in realtime',
-      'monitor live market with best in class insights',
-      'browse investment ideas between your meeting',
+      'monitor live market with best in class insights into NEPSE',
+      'browse investment ideas between your meeting with npstocks',
     ]
   },
   card2:
   {
-    title: 'npstocks web offers you more professional investment and trading tools on the web',
+    title: 'npstocks web offers you more professional investment and trading tools on the web for NEPSE',
     points: [
-      'complete company financials',
-      'technical chart powered by npstocks insights and tools',
-      'comprehensive broker analytics tool',
-      'portfolio analyser',
+      'complete company financials for listed companies on NEPSE',
+      'NEPSE chart powered by npstocks insights and tools',
+      'utilise a comprehensive broker analytics tool for Nepal Stock Exchange ',
+      'Evaluate your investments with NEPSE portfolio analyser   ',
     ]
   },
 }
 
 export const featureList = [
-  { icon: lightning, label: "Fastest Price Feed" },
+  { icon: lightning, label: "Fastest NEPSE Feed" },
   { icon: one, label: "Fastest Digitised Financials EachDay" },
   { icon: progress, label: "Portfolio Manager" },
   { icon: filter, label: "Powerful Screeners" },

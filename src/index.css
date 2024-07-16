@@ -43,6 +43,19 @@
     background: linear-gradient(180deg, #0E7BF8 0%, rgba(14, 123, 248, 0.00) 86.35%);
     filter: blur(200px);
   }
+
+  .popup-gradient {
+    border-radius: 816px;
+    background: linear-gradient(180deg, #0E7BF8 0%, rgba(14, 123, 248, 0.00) 86.35%);
+    filter: blur(37.745px);
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    z-index: 0;
+  }
+
 }
 
 @layer utilities {

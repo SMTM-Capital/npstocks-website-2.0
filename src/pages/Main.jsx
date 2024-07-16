@@ -1,11 +1,12 @@
 import React from 'react';
-import { Nav } from '../components';
-import { Experience, Features, Hero, Pricing, Footer } from '../sections';
+import { Nav, PopupMessage } from '../components';
+import { Experience, Features, Hero, Pricing, Footer, Partners } from '../sections';
 
 const Main = () => {
   return (
     <>
       <main className="relative">
+        {/* <PopupMessage /> */}
         <section className='w-full bg-[#141516] px-4 py-4 md:pl-11'>
           <Nav />
         </section>
@@ -17,6 +18,10 @@ const Main = () => {
 
         <section>
           <Experience />
+        </section>
+
+        <section className='mt-[40px] mb-[26px]'>
+          <Partners />
         </section>
 
         <section className="relative w-full bg-[#141516] overflow-hidden">
