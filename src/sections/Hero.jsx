@@ -45,13 +45,13 @@ const Hero = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <a
+            <button
               onClick={openQrModelFunc}
               className='flex flex-row items-center gap-[10px] px-5 py-[10px] cursor-pointer'
             >
               <img src={isHovered ? mobileYellow : mobile} alt='mobile icon' />
               <p className='text-[16px] font-medium'>Download npstocks <span className='font-bold ml-1'>Mobile</span></p>
-            </a>
+            </button>
           </div>
         </div>
 
