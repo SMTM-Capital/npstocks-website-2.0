@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import keyboard from '../assets/icons/keyboard.svg';
 import mobile from '../assets/icons/mobile.svg';
+import ReactGA from 'react-ga4';
 import mobileYellow from '../assets/icons/mobile-yellow.svg'
 import keyboardYellow from '../assets/icons/keyboard-yellow.svg'
 import bar from '../assets/icons/bar.png';
@@ -12,10 +13,26 @@ const Hero = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
 
-  const openQrModelFunc = () => {
-    setOpenQrModel(prev => !prev);
-  }
+  const handleLaunchNpstocksWebClick = () => {
+    ReactGA.event({
+      category: 'User',
+      action: 'Clicked launch npstocks web click',
+    });
+  };
 
+  const handleDownloadNpstocksMobile = () => {
+    ReactGA.event({
+      category: 'User',
+      action: 'Clicked download npstocks mobile click',
+    });
+
+    setOpenQrModel(true);
+  };
+
+  const handleQrClose = () => {
+    setOpenQrModel(false);
+  }
+  
   return (
     <section className='relative max-container overflow-hidden h-[810px]'>
       <div className="flex flex-col items-center justify-center gap-9">
@@ -34,8 +51,16 @@ const Hero = () => {
             onMouseEnter={() => setIsHovered2(true)}
             onMouseLeave={() => setIsHovered2(false)}
           >
-            <a target='_blank' href='https://app.npstocks.com' className='flex flex-row items-center gap-[10px] px-5 py-[10px] cursor-pointer'>
-              <img src={isHovered2 ? keyboardYellow : keyboard} alt="keyboard" />
+            <a
+              target='_blank'
+              href='https://app.npstocks.com'
+              className='flex flex-row items-center gap-[10px] px-5 py-[10px] cursor-pointer'
+              onClick={handleLaunchNpstocksWebClick}
+            >
+              <img
+                src={isHovered2 ? keyboardYellow : keyboard}
+                alt="keyboard"
+              />
               <p className='text-[16px] font-medium'>Launch npstocks <span className='font-bold ml-1'>Web</span></p>
             </a>
           </div>
@@ -46,7 +71,7 @@ const Hero = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             <button
-              onClick={openQrModelFunc}
+              onClick={handleDownloadNpstocksMobile}
               className='flex flex-row items-center gap-[10px] px-5 py-[10px] cursor-pointer'
             >
               <img src={isHovered ? mobileYellow : mobile} alt='mobile icon' />
@@ -65,7 +90,7 @@ const Hero = () => {
 
       {openQrModel &&
         <div className="z-30 overflow-hidden fixed flex justify-center items-center left-0 top-0 w-[100%] h-[100%] bg-[#000000E5] ">
-          <QrModel close={openQrModelFunc} />
+          <QrModel close={handleQrClose} />
         </div>
       }
     </section>

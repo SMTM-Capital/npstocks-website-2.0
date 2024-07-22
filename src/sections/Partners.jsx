@@ -9,12 +9,16 @@ const Partners = () => {
 
       <div className="flex flex-col md:flex-row w-full justify-between">
         <div className="flex flex-row justify-start items-center gap-[14px]">
-          <img src={nepseLogo} alt="nepse logo" />
+          <a href="https://nepalstock.com/" target='_blank'>
+            <img src={nepseLogo} alt="nepse logo" />
+          </a>
           <p className='text-black text-base font-semibold w-[385px]'>npstocks is a Licensed Data vendor of  Nepal Stock Exchange (NEPSE)</p>
         </div>
 
         <div className="flex flex-row justify-start items-center gap-[14px]">
-          <img src={tradingViewLogo} alt="trading view logo" />
+          <a href="https://www.tradingview.com/economic-calendar/" target='_blank'>
+            <img src={tradingViewLogo} alt="trading view logo" />
+          </a>
           <p className='text-black text-base font-semibold w-[385px]'>npstocks has partnered with Trading view for its charting technology.</p>
         </div>
       </div>

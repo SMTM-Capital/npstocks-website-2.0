@@ -1,5 +1,6 @@
 import React from 'react';
 import closeIcon from '../assets/icons/close.png';
+import ReactGA from 'react-ga4';
 import gradient from '../assets/icons/gradient.svg';
 import appstore from '../assets/icons/appstore.png';
 import playstore from '../assets/icons/playstore.png';
@@ -7,6 +8,21 @@ import playstoreQr from '../assets/images/playstore-qr.png';
 import appstoreQr from '../assets/images/appstore-qr.png';
 
 const QrModel = ({ close }) => {
+
+  const handlePlaystoreDownloadClick = () => {
+    ReactGA.event({
+      category: 'User',
+      action: 'Clicked playstore download click',
+    });
+  };
+
+  const handleAppstoreDownloadClick = () => {
+    ReactGA.event({
+      category: 'User',
+      action: 'Clicked appstore download click',
+    });
+  };
+
   return (
     <div className='relative flex flex-col items-center w-[387px] md:w-[685px] h-[822px] md:h-[557px] px-4 bg-white rounded-[32px]'>
       <div className='relative h-[193px] w-[387px] md:w-[685px] bg-[#0E0915] rounded-t-[26px] overflow-hidden'>
@@ -23,7 +39,7 @@ const QrModel = ({ close }) => {
           <div className="w-[210px] h-[210px] md:w-[240px] md:h-[240px] p-4 bg-white rounded-3xl shadow-xl flex items-center justify-center">
             <img src={playstoreQr} alt="playstore qr" className="w-full h-full object-contain" />
           </div>
-          <a href="https://play.google.com/store/apps/details?id=np.com.smtmcapital.npstocks" target='_blank' rel="noopener noreferrer">
+          <a href="https://play.google.com/store/apps/details?id=np.com.smtmcapital.npstocks" onClick={handlePlaystoreDownloadClick} target='_blank' rel="noopener noreferrer">
             <img src={playstore} alt="playstore" className="h-10" />
           </a>
         </div>
@@ -31,7 +47,7 @@ const QrModel = ({ close }) => {
           <div className="w-[210px] h-[210px] md:w-[240px] md:h-[240px] p-4 bg-white rounded-3xl shadow-xl flex items-center justify-center">
             <img src={appstoreQr} alt="appstore qr" className="w-full h-full object-contain" />
           </div>
-          <a href="https://apps.apple.com/app/npstocks-your-nepse-assistant/id6475991618" target='_blank' rel="noopener noreferrer">
+          <a href="https://apps.apple.com/app/npstocks-your-nepse-assistant/id6475991618" onClick={handleAppstoreDownloadClick} target='_blank' rel="noopener noreferrer">
             <img src={appstore} alt="appstore" className="h-10" />
           </a>
         </div>

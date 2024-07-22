@@ -1,9 +1,18 @@
 import React from 'react';
 import { PriceCard } from '../components';
 import { pricings } from '../constants';
+import ReactGA from 'react-ga4';
 import arrow from '../assets/icons/arrow-right.svg';
 
 const Pricing = () => {
+
+  const handleStartYourFreeTrail = () => {
+    ReactGA.event({
+      category: 'User',
+      action: 'Clicked start your free trial',
+    });
+  };
+
   return (
     <section id='pricing' className='max-container pt-12 pb-[160px]'>
       <div className='flex flex-col items-center gap-[81px]'>
@@ -27,7 +36,7 @@ const Pricing = () => {
           }
         </div>
 
-        <a target='_blank' href='https://app.npstocks.com/register/' className='flex flex-row gap-6 items-center rounded-[60px] px-[64px] py-[24px] transition ease-in-out duration-700 hover:shadow-lg hover:shadow-[#5843F8]/70 bg-[#5843F8] text-white text-[16px] md:text-[24px] font-semibold'>
+        <a target='_blank' href='https://app.npstocks.com/register/' onClick={handleStartYourFreeTrail} className='flex flex-row gap-6 items-center rounded-[60px] px-[64px] py-[24px] transition ease-in-out duration-700 hover:shadow-lg hover:shadow-[#5843F8]/70 bg-[#5843F8] text-white text-[16px] md:text-[24px] font-semibold'>
           <p>Start your free trial </p>
 
           <img src={arrow} alt="arrow" />
